@@ -11,6 +11,7 @@ const Form = props => {
 		e.preventDefault()
 		if (weightInput === '' || heightInput === '' || ageInput === '') {
 			setAlertVisible(true)
+            return
 		} else {
             setAlertVisible(false)
         }
