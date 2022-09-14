@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  box-sizing: border-box;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #232323;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.add-btn {
+  border: none;
+  border-radius: .25rem;
+  background-color: hotpink;
+  box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: rgb(246, 142, 194);
+  cursor: pointer;
+}
+
+.btn-container {
+  display:flex;
+  justify-content: center;
+}
+
+input {
+  color: black;
+}
+
+label {
+  align-self: start;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.obese, .overweight, .normal, .underweight {
+  border-radius: .25rem;
+  padding: 2px 4px;
+}
+
+.obese {
+  background-color: red;
+}
+
+.overweight {
+  background-color: orange;
+}
+
+.normal {
+  background-color: green;
+}
+
+.underweight {
+  background-color: lightgreen;
+}
+
+.alert {
+  color: red;
+  font-size: .6rem;
+  font-weight: bold;
 }
