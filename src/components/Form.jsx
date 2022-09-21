@@ -25,7 +25,7 @@ const Form = props => {
 
 	return (
 		<form className="input-form" type="submit" onSubmit={submitHandler}>
-			<label htmlFor="weight">Weight</label>
+			<label htmlFor="weight">Weight (lbs)</label>
 			<input
 				type="text"
 				id="weight"
@@ -34,7 +34,7 @@ const Form = props => {
 				}}
 				value={weightInput}
 			/>
-			<label htmlFor="height">Height</label>
+			<label htmlFor="height">Height (inches)</label>
 			<input
 				type="text"
 				id="height"
